@@ -6,16 +6,24 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: '17'
       - uses: gradle/actions/setup-gradle@v3
-      - name: Build APK
-        run: gradle assembleDebug
+      - name: Build Web + Make APK
+        run: |
+          npm install
+          npm run build
+          npm install @capacitor/core @capacitor/cli @capacitor/android
+          npx cap init DailyJoma com.dailyjoma.app --web-dir=dist --npm-client=npm || true
+          npx cap add android || true
+          npx cap copy android || true
+          cd android && chmod +x gradlew && ./gradlew assembleDebug
       - uses: actions/upload-artifact@v4
         with:
           name: Daily-Joma-APK
-          path: |
-            app/build/outputs/apk/debug/*.apk
-            **/build/outputs/apk/debug/*.apk
+          path: android/app/build/outputs/apk/debug/*.apk
