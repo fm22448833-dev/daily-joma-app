@@ -1,0 +1,6 @@
+{
+  "name": "Daily Joma",
+  "description": "Daily savings and deposit management app for members by Md Firoz Islam (দৈনিক জমা হিসাব)",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Daily Joma</string>
+    <string name="app_title_bn">দৈনিক জমা</string>
+    <string name="admin_name">Md Firoz Islam</string>
+    <string name="admin_title">Admin: ফিরোজ ভাই</string>
+    <string name="tab_dashboard">ড্যাশবোর্ড</string>
+    <string name="tab_members">সদস্য তালিকা</string>
+    <string name="tab_joma">জমা হিসাব</string>
+    <string name="today_summary">আজকের হিসাব</string>
+    <string name="total_members">মোট সদস্য</string>
+    <string name="total_joma">সর্বমোট জমা</string>
+    <string name="today_joma">আজকের জমা</string>
+    <string name="add_member">নতুন সদস্য যোগ করুন</string>
+    <string name="member_name_hint">সদস্যের নাম লিখুন</string>
+    <string name="member_phone_hint">মোবাইল নম্বর লিখুন</string>
+    <string name="btn_add_member">সদস্য যোগ করুন</string>
+    <string name="daily_deposit_title">দৈনিক ১০০ টাকা জমা</string>
+    <string name="btn_deposit_100">১০০ টাকা জমা দিন</string>
+    <string name="btn_custom_deposit">টাকা জমা দিন</string>
+    <string name="deposit_instruction">প্রতিদিন প্রতি সদস্যের জন্য ১০০ টাকা বা নির্দিষ্ট পরিমাণ জমা যোগ করুন</string>
+    <string name="delete">ডিলিট</string>
+    <string name="confirm_delete_member">এই সদস্যকে কি মুছে ফেলতে চান?</string>
+    <string name="confirm_delete_joma">এই জমার হিসাব কি মুছে ফেলতে চান?</string>
+</resources>
